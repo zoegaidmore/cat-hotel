@@ -1,0 +1,151 @@
+/* Global Styling */
+
+.wrapper {
+  max-width: 1200px; 
+  margin: 0 auto;     
+  padding: 2rem 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section{
+    padding: 2rem;
+    display: flex;
+    
+}
+
+p {
+    font-size: 1.4rem;    
+    line-height: 2.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.hero , .staff{
+    padding: 2rem 4rem;
+    background-color: rgba(128, 128, 128, 0.219);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img , .staff__img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    max-height: 20rem;
+    
+}
+
+.staff__content, .hero__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Hero Styling */
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hero__heading {
+    font-size: 3rem;
+}
+
+
+/* Mission Styling */
+
+.mission {
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mission__container {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.mission__card {
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.mission__img-container {
+    position: absolute;
+    width: 60%;
+    height: 4.5rem;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(212, 220, 230, 0.836);
+    padding: .3rem 0;
+    display: flex;           
+    justify-content: center;  
+    align-items: center;      
+    border-radius: 3rem;
+}
+
+.mission__card-header {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.mission__card-text {
+    text-align: left;
+}
+
+.mission__img {
+    width: 50%;
+    height: 100%;
+}
+
+/* Staff Styling */
+
+
+
+/* Contact Styling */
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(212, 220, 230, 0.836);
+    gap: 1rem;
+
+}
+
+.contact__btn {
+    padding: .5rem 3rem;
+    width: fit-content;
+    background-color: rgb(77, 127, 202);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact__btn:hover {
+    color: rgb(77, 127, 202);
+    background-color: white;
+    border-color:rgb(77, 127, 202);
+}
