@@ -1,39 +1,61 @@
-:root{
+:root {
+  /*-------------------- COLORS --------------------*/
 
-  /* Colors */
+  /* Backgrounds */
+  --color-bg-dark: #1f2937;
+  --color-quote-bg: #e5e7eb;
 
-  /*--------------------PLACEHOLDERS--------------------- */
-  
-  --color-primary: #4d7fcb;
-  --color-secondary: #d4dce6;
-  --color-accent: #ffb703;
+  /* Text colors */
+  --color-hero-text-main: #f9faf8;
+  --color-hero-text-secondary: #e5e7eb;
+  --color-header-logo: #f9faf8;
+  --color-info-header: #1f2937;
+  --color-quote-text: #1f2937;
 
-  --color-text: #333;
-  --color-text-light: #666;
+  /* call to action */
+  --color-cta: #3882f6;
 
-  --color-bg: #ffffff;
-  --color-surface: #f5f5f5;
+  /* border Colors */
+  --color-cta-btn-border: #3882f6;
+  --color-card-border: #e5e7eb;
 
-  --color-border: #cccccc7c;
+  /*-------------------- TYPOGRAPHY --------------------*/
 
+  /* Font family */
+  --font-family-base: 'Roboto', sans-serif;
 
-  /* Typoghraphy */
+  /* Font sizes */
+  --font-size-hero-main: 48px;
+  --font-size-secondary: 18px;
+  --font-size-header-logo: 24px;
+  --font-size-info-header: 36px;
+  --font-size-quote: 36px;
 
-  --font-family-base: 'Roboto';
+  /* Font weights & styles */
+  --font-weight-hero-main: 800;
+  --font-weight-info-header: 800;
+  --font-weight-quote: 300;
+  --font-style-quote: italic;
 
-  --font-size-sm: 1.2rem;
-  --font-size-base: 1.4rem;
-  --font-size-lg: 2rem;
-  --font-size-xl: 3rem;
+  /*-------------------- OTHER --------------------*/
 
-  --line-height-base: 1.6;
+  /* Breakpoints (PLEASE CHECK) */
+  --bp-mobile: 480px;
+  --bp-mobile-lg: 576px;
+  --bp-tablet: 768px;
+  --bp-tablet-lg: 992px;
+  --bp-desktop: 1200px;
+  --bp-desktop-lg: 1400px;
 
-  /* Layout */
-  
-  --max-width: 1200px;
+  /* Border Radii */
+  --border-radius-btn: 10px;
+  --border-radius-primary: 0.2rem;
+  --border-radius-card: 0.5rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
