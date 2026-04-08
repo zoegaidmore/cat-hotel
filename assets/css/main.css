@@ -2,22 +2,21 @@
   /*-------------------- COLORS --------------------*/
 
   /* Backgrounds */
-  --color-bg-dark: #1f2937;
-  --color-quote-bg: #e5e7eb;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #e5e7eb;
+  --color-bg-tertiary: #1f2937;
 
   /* Text colors */
-  --color-hero-text-main: #f9faf8;
-  --color-hero-text-secondary: #e5e7eb;
-  --color-header-logo: #f9faf8;
-  --color-info-header: #1f2937;
-  --color-quote-text: #1f2937;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #e5e7eb;
+  --color-text-inverse: #f9faf8;
 
-  /* call to action */
-  --color-cta: #3882f6;
+  /* Accent / CTA */
+  --color-accent: #3882f6;
 
-  /* border Colors */
-  --color-cta-btn-border: #3882f6;
-  --color-card-border: #e5e7eb;
+  /* Borders */
+  --color-border: #e5e7eb;
+  --color-accent-border: #3882f6;
 
   /*-------------------- TYPOGRAPHY --------------------*/
 
@@ -25,27 +24,21 @@
   --font-family-base: 'Roboto', sans-serif;
 
   /* Font sizes */
-  --font-size-hero-main: 48px;
-  --font-size-secondary: 18px;
-  --font-size-header-logo: 24px;
-  --font-size-info-header: 36px;
-  --font-size-quote: 36px;
+  --font-size-xl: 48px;
+  --font-size-lg: 36px;
+  --font-size-md: 24px;
+  --font-size-sm: 18px;
 
-  /* Font weights & styles */
-  --font-weight-hero-main: 800;
-  --font-weight-info-header: 800;
-  --font-weight-quote: 300;
-  --font-style-quote: italic;
+  /* Font weights */
+  --font-weight-bold: 800;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  /* Font styles */
+  --font-style-normal: normal;
+  --font-style-italic: italic;
 
   /*-------------------- OTHER --------------------*/
-
-  /* Breakpoints (PLEASE CHECK) */
-  --bp-mobile: 480px;
-  --bp-mobile-lg: 576px;
-  --bp-tablet: 768px;
-  --bp-tablet-lg: 992px;
-  --bp-desktop: 1200px;
-  --bp-desktop-lg: 1400px;
 
   /* Border Radii */
   --border-radius-btn: 10px;
