@@ -23,7 +23,7 @@ h2 {
 
 .hero-about,
 .staff {
-  padding: 2rem;
+  display: flex;
   background-color: var(--color-quote-bg);
   justify-content: center;
   align-items: center;
@@ -31,19 +31,20 @@ h2 {
 
 .hero-about__img,
 .staff__img {
-  width: 50%;
-  max-width: 100%;
   height: auto;
   max-height: 30rem;
   object-fit: cover;
   object-position: bottom;
   border-radius: var(--border-radius-primary);
+  flex: 1 1 50%; /* grow, shrink, basis = 50% */
+  max-width: 50%;
 }
 
 .staff__content,
 .hero-about__content {
   width: 50%;
   padding: 2rem 3rem;
+  flex: 1;
 }
 
 .hero-about__content > *,
@@ -68,9 +69,9 @@ h2 {
 /* hero-about Styling */
 
 .hero-about {
-  display: flex;
   background-color: var(--color-bg-dark);
   color: var(--color-hero-text-main);
+  justify-content: center;
 }
 
 .hero-about__heading {
@@ -90,6 +91,8 @@ h2 {
 
 .mission__container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -135,8 +138,10 @@ h2 {
 
 .staff {
   display: flex;
-  width: fit-content;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  gap: 3rem;
   border-radius: var(--border-radius-primary);
   padding: 0;
   background-color: var(--color-quote-bg);
@@ -152,7 +157,8 @@ h2 {
   background-color: var(--color-cta);
   gap: 1rem;
   color: var(--color-hero-text-secondary);
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
   border-radius: 0.2rem;
