@@ -1,0 +1,202 @@
+/* Global Styling */
+ 
+.wrapper {
+  max-width: 1200px; 
+  margin: 0 auto;     
+  padding: 2rem 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+ 
+.section {
+    padding: 2rem;
+    display: flex;
+}
+ 
+p {
+    font-size: 1.4rem;    
+    line-height: 2.2rem;
+}
+ 
+h2 {
+    font-size: 2rem;
+}
+ 
+/* Hero Styling */
+ 
+.hero {
+    padding: 2rem 4rem;
+    background-color: rgba(128, 128, 128, 0.219);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.hero__img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    max-height: 20rem;
+}
+ 
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.5rem;
+}
+ 
+.hero__heading {
+    font-size: 3rem;
+}
+ 
+/* Contact Info Cards — mirrors .mission styling */
+ 
+.contact-info {
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.contact-info__grid {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+ 
+.contact-info__card {
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+ 
+.contact-info__icon-wrap {
+    position: absolute;
+    width: 60%;
+    height: 4.5rem;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(212, 220, 230, 0.836);
+    padding: .3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+ 
+.contact-info__icon {
+    width: 50%;
+    height: 100%;
+}
+ 
+.contact-info__card-header {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+ 
+.contact-info__card-text {
+    text-align: left;
+}
+ 
+.contact-info__hours {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+ 
+.contact-info__link {
+    color: rgb(77, 127, 202);
+    text-decoration: none;
+}
+ 
+.contact-info__link:hover {
+    text-decoration: underline;
+}
+ 
+/* Form Section — mirrors .staff styling */
+ 
+.form-section {
+    padding: 2rem 4rem;
+    background-color: rgba(128, 128, 128, 0.219);
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+ 
+.form-section__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+ 
+.form-wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+ 
+.form-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+ 
+.form-input {
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+    background-color: white;
+}
+ 
+.form-input:focus {
+    border-color: rgb(77, 127, 202);
+}
+ 
+.form-textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+ 
+/* Button — matches about.css .contact__btn exactly */
+ 
+.contact__btn {
+    padding: .5rem 3rem;
+    width: fit-content;
+    background-color: rgb(77, 127, 202);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+ 
+.contact__btn:hover {
+    color: rgb(77, 127, 202);
+    background-color: white;
+    border-color: rgb(77, 127, 202);
+}
+ 
