@@ -3,35 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cat Hotel</title>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>KittyPaws</title>
   </head>
 
-  <body>
-    <header>
-      <div class="container">`
-        <h1>Cat Hotel</h1>
+  <body class="page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <nav aria-label="Main navigation">
-          <ul>
-            <li><a href="pages/about/about.html">About</a></li>
-            <li><a href="pages/rooms/rooms.html">Rooms</a></li>
-            <li><a href="pages/reviews/reviews.html">Reviews</a></li>
-            <li><a href="pages/contact/contact.html">Contact</a></li>
+    <header class="header">
+      <div class="container header__inner">
+        <a
+          href="../../index.html"
+          class="header__logo"
+          aria-label="KittyPaws home"
+        >
+          KittyPaws
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="../about/about.html" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="../rooms/rooms.html" class="header__link">Rooms</a>
+            </li>
+            <li class="header__item">
+              <a href="../reviews/reviews.html" class="header__link">Reviews</a>
+            </li>
+            <li class="header__item">
+              <a href="../contact/contact.html" class="header__link">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              A Cozy Stay for Your Cat
+            </h1>
+
+            <p class="hero__text">
+              KittyPaws is a calm and comfortable cat hotel where every guest
+              enjoys gentle care, a clean private space, and a relaxing
+              environment while you are away.
+            </p>
+
+            <a href="./pages/about/about.html" class="button hero__button"
+              >Learn More</a
+            >
+          </div>
+
+          <img
+            src="./assets/images/temporary image.png"
+            alt="A relaxed cat resting in a cozy room at KittyPaws"
+            class="hero__image"
+          />
+        </div>
+      </section>
+
+      <section class="benefits" aria-labelledby="benefits-title">
+        <div class="container benefits__inner">
+          <h2 class="benefits__title" id="benefits-title">
+            Comfort in Every Detail
+          </h2>
+
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__card">
+                <img
+                  src="./assets/images/temporary image.png"
+                  alt=""
+                  class="benefits__image"
+                />
+                <p class="benefits__text">
+                  Calm, quiet spaces where cats can relax without stress.
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__card">
+                <img
+                  src="./assets/images/temporary image.png"
+                  alt=""
+                  class="benefits__image"
+                />
+                <p class="benefits__text">
+                  Clean and fresh environment maintained every day.
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__card">
+                <img
+                  src="./assets/images/temporary image.png"
+                  alt=""
+                  class="benefits__image"
+                />
+                <p class="benefits__text">
+                  A consistent routine for feeding, rest, and care.
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__card">
+                <img
+                  src="./assets/images/temporary image.png"
+                  alt=""
+                  class="benefits__image"
+                />
+                <p class="benefits__text">
+                  Gentle, attentive care tailored to each cat.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="quote" aria-labelledby="quote-title">
+        <div class="container quote__inner">
+          <h2 class="visually-hidden" id="quote-title">About our philosophy</h2>
+
+          <blockquote class="quote__content">
+            <p class="quote__text">
+              A cat doesn’t need much to be happy, a quiet space, a soft place
+              to rest, and someone who understands them. But when you’re away,
+              those simple things matter even more. At KittyPaws, we make sure
+              every cat feels safe, comfortable, and truly at home, so you can
+              have peace of mind while you’re apart.
+            </p>
+          </blockquote>
+
+          <p class="quote__author">-Elizabeth</p>
+        </div>
+      </section>
+
+      <section class="rooms-banner" aria-labelledby="rooms-banner-title">
+        <div class="container rooms-banner__inner">
+          <div class="rooms-banner__content">
+            <h2 class="rooms-banner__title" id="rooms-banner-title">
+              Explore our cozy rooms for your cat
+            </h2>
+            <p class="rooms-banner__text">
+              Each room is designed for comfort, safety, and a calm stay. Find
+              the perfect space for your cat.
+            </p>
+          </div>
+
+          <a
+            href="./pages/rooms/rooms.html"
+            class="button rooms-banner__button"
+          >
+            View Rooms
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; Copyright</p>
-      </div>
+    <footer class="footer">
+      <p class="footer__text">KittyPaws &copy;</p>
     </footer>
   </body>
 </html>
