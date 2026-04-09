@@ -64,7 +64,7 @@
 /* HERO SECTION */
 
 .hero-about {
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-bg-dark);
   color: var(--color-text-inverse);
 }
 
@@ -77,6 +77,10 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   line-height: 2.2rem;
+}
+
+.hero-about__container {
+  padding: 1rem;
 }
 
 /* MISSION SECTION */
@@ -121,7 +125,7 @@
   top: -3rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-bg-primary);
+  background-color: #ffffff;
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -151,7 +155,7 @@
 
 .staff {
   max-width: 1200px;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-light);
   color: var(--color-text-primary);
 }
 
@@ -164,6 +168,11 @@
 .staff .staff__header {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
+}
+
+.staff__img {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* CONTACT SECTION */
