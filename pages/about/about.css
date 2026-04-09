@@ -64,7 +64,7 @@
 /* HERO SECTION */
 
 .hero-about {
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-bg-dark);
   color: var(--color-text-inverse);
 }
 
@@ -121,7 +121,7 @@
   top: -3rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-bg-primary);
+  background-color: #ffffff;
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -151,7 +151,7 @@
 
 .staff {
   max-width: 1200px;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-light);
   color: var(--color-text-primary);
 }
 

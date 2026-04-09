@@ -2,9 +2,8 @@
   /*-------------------- COLORS --------------------*/
 
   /* Backgrounds */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #e5e7eb;
-  --color-bg-tertiary: #1f2937;
+  --color-bg-light: #e5e7eb;
+  --color-bg-dark: #1f2937;
 
   /* Text colors */
   --color-text-primary: #1f2937;
@@ -24,10 +23,10 @@
   --font-family-base: 'Roboto', sans-serif;
 
   /* Font sizes */
-  --font-size-xl: 48px;
-  --font-size-lg: 36px;
-  --font-size-md: 24px;
-  --font-size-sm: 18px;
+  --font-size-xl: 3rem;
+  --font-size-lg: 2.25rem;
+  --font-size-md: 1.5rem;
+  --font-size-sm: 1.125rem;
 
   /* Font weights */
   --font-weight-bold: 800;
@@ -41,17 +40,9 @@
   /*-------------------- OTHER --------------------*/
 
   /* Border Radii */
-  --border-radius-btn: 10px;
+  --border-radius-btn: 0.625rem;
   --border-radius-primary: 0.2rem;
   --border-radius-card: 0.5rem;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 @font-face {
@@ -80,6 +71,14 @@
   src: url('../fonts/roboto/Roboto-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
