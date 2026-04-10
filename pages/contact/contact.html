@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./contact.css">
  
     <title>Contact</title>
 </head>
@@ -27,15 +27,15 @@
  
     <main id="main-content">
  
-        <div class="wrapper">
+        <div class="contact-wrapper">
  
             <!-- Hero -->
-            <section class="section hero">
-                <div class="hero__content">
-                    <h1 class="hero__heading">Get In Touch</h1>
-                    <p class="hero__text">We'd love to hear from you! Whether you have questions about our rooms, want to make a booking, or just want to say meow — we're here to help.</p>
+            <section class="section hero-contact">
+                <div class="hero-contact__content">
+                    <h1 class="hero-contact__heading">Get In Touch</h1>
+                    <p class="hero-contact__text">We'd love to hear from you! Whether you have questions about our rooms, want to make a booking, or just want to say meow — we're here to help.</p>
                 </div>
-                <img src="../../assets/images/placeholder.png" alt="A cat relaxing at the hotel" class="hero__img">
+                <img src="../../assets/images/placeholder.png" alt="A cat relaxing at the hotel" class="hero-contact__img">
             </section>
  
             <!-- Contact Info Cards -->
@@ -49,7 +49,8 @@
                             <img src="../../assets/images/placeholder.png" alt="location icon" class="contact-info__icon">
                         </div>
                         <h3 class="contact-info__card-header">Visit Us</h3>
-                        <p class="contact-info__card-text">42 Whisker Lane<br>Portland, OR 97201</p>
+                        <p class="contact-info__card-text">42 Whisker Lane</p>
+                        <p class="contact-info__card-text">Portland, OR 97201</p>
                     </article>
  
                     <article class="contact-info__card">
@@ -57,8 +58,13 @@
                             <img src="../../assets/images/placeholder.png" alt="phone icon" class="contact-info__icon">
                         </div>
                         <h3 class="contact-info__card-header">Call Us</h3>
-                        <p class="contact-info__card-text">(503) 555-0182</p>
-                        <p class="contact-info__card-text contact-info__hours">Mon–Fri: 8am – 6pm<br>Sat–Sun: 9am – 4pm</p>
+                        <p class="contact-info__card-text"><a href="tel:+15035550182" class="contact-info__link">(503) 555-0182</a></p>
+                        <p class="contact-info__card-text contact-info__hours">
+                            <ul class="contact-info__hours">
+                                <li>Mon–Fri: 8am – 6pm</li>
+                                <li>Sat–Sun: 9am – 4pm</li>
+                            </ul>
+                        </p>
                     </article>
  
                     <article class="contact-info__card">
@@ -84,33 +90,35 @@
                 </div>
             </section>
  
-            <!-- Contact Form -->
+            <!-- Contact Form — currently commented out but can be added back in when JS is added. 
+
             <section class="section form-section">
                 <div class="form-section__content">
                     <h2 class="form-section__header">Send Us a Message</h2>
                     <p class="form-section__text">Fill out the form below and we'll get back to you within one business day. We can't wait to meet your cat!</p>
                 </div>
- 
-                <div class="form-wrap">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="Jane Smith">
+
+                <form class="contact-form">
+                    <div class="contact-form__group">
+                        <label for="name" class="contact-form__label">Your Name</label>
+                        <input type="text" id="name" name="name" class="contact-form__input" placeholder="Jane Smith">
                     </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="jane@example.com">
+                    <div class="contact-form__group">
+                        <label for="email" class="contact-form__label">Email Address</label>
+                        <input type="email" id="email" name="email" class="contact-form__input" placeholder="jane@example.com">
                     </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Booking enquiry, general question...">
+                    <div class="contact-form__group">
+                        <label for="subject" class="contact-form__label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="contact-form__input" placeholder="Booking enquiry, general question...">
                     </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your cat and how we can help!"></textarea>
+                    <div class="contact-form__group">
+                        <label for="message" class="contact-form__label">Message</label>
+                        <textarea id="message" name="message" class="contact-form__input contact-form__textarea" placeholder="Tell us about your cat and how we can help!"></textarea>
                     </div>
-                    <button type="submit" class="contact__btn">Send Message</button>
-                </div>
+                    <button type="submit" class="contact-form__btn">Send Message</button>
+                </form>
             </section>
+            -->
  
         </div>
     </main>

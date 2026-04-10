@@ -1,105 +1,119 @@
+/* Colors */
+:root {
+    --color-bg-room-card: rgba(128, 128, 128, 0.219);
+    --color-bg-room-card-reverse: rgba(212, 220, 230, 0.836);
+}
+
 /* Global Styling */
- 
+
 .wrapper {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
- 
+
 .section {
     padding: 2rem;
-    display: flex;
 }
- 
-p {
-    font-size: 1.4rem;
+
+.hero__text,
+.room__desc,
+.included__card-text,
+.rooms-cta__text {
+    font-size: var(--font-size-sm);
     line-height: 2.2rem;
 }
- 
-h2 {
-    font-size: 2rem;
+
+.rooms__header,
+.included__header,
+.rooms-cta__header {
+    font-size: var(--font-size-lg);
 }
- 
+
 /* Hero Styling */
- 
+
 .hero {
+    display: flex;
+    flex-wrap: wrap;
     padding: 2rem 4rem;
-    background-color: rgba(128, 128, 128, 0.219);
+    background-color: var(--color-bg-light);
     gap: 3rem;
     justify-content: center;
     align-items: center;
 }
- 
+
 .hero__img {
-    width: 50%;
+    flex: 1 1 250px;
     max-width: 100%;
     height: auto;
     max-height: 20rem;
+    object-fit: cover;
 }
- 
+
 .hero__content {
+    flex: 1 1 250px;
     display: flex;
     flex-direction: column;
-    width: 50%;
     gap: 1.5rem;
 }
- 
+
 .hero__heading {
-    font-size: 3rem;
+    font-size: var(--font-size-xl);
 }
- 
+
 /* Rooms Section */
- 
+
 .rooms {
+    display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
 }
- 
+
 .rooms__grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
 }
- 
-/* Individual Room Cards — alternating image/content layout like .staff */
- 
+
+/* Individual Room Cards */
+
 .room__card {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     padding: 2rem 4rem;
-    background-color: rgba(128, 128, 128, 0.219);
+    background-color: var(--color-bg-room-card);
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
 }
- 
+
 .room__card--reversed {
     flex-direction: row-reverse;
-    background-color: rgba(212, 220, 230, 0.836);
+    background-color: var(--color-bg-room-card-reverse);
 }
- 
+
 .room__img {
-    width: 40%;
+    flex: 1 1 200px;
     max-width: 100%;
     height: auto;
     max-height: 22rem;
     border-radius: 0.75rem;
     object-fit: cover;
-    flex-shrink: 0;
 }
- 
+
 .room__content {
-    width: 60%;
+    flex: 2 1 300px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
- 
+
 .room__title-row {
     display: flex;
     align-items: center;
@@ -107,129 +121,158 @@ h2 {
     gap: 1rem;
     flex-wrap: wrap;
 }
- 
+
 .room__name {
-    font-size: 1.8rem;
+    font-size: var(--font-size-lg);
 }
- 
+
 .room__price {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     font-weight: 700;
-    color: rgb(77, 127, 202);
+    color: var(--color-accent);
 }
- 
+
 .room__price--premium {
     color: #b07d2e;
 }
- 
+
 .room__capacity {
-    font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.55);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
     margin: 0;
     line-height: 1.6rem;
 }
- 
+
 .room__desc {
-    font-size: 1.3rem;
+    font-size: var(--font-size-sm);
     line-height: 2rem;
 }
- 
+
 .room__amenities {
     padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
- 
+
 .room__amenities li {
-    font-size: 1.2rem;
+    font-size: var(--font-size-sm);
     line-height: 1.9rem;
-    color: rgba(0, 0, 0, 0.75);
+    color: var(--color-text-primary);
 }
- 
-/* What's Included Section — mirrors .mission */
- 
+
+/* What's Included Section */
+
 .included {
+    display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
 }
- 
+
 .included__grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
 }
- 
+
 .included__card {
-    border: 1px solid rgba(128, 128, 128, 0.219);
+    border: 1px solid var(--color-border);
     border-radius: 1rem;
     padding: 2rem;
-    position: relative;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 200px;
     gap: 1rem;
+    align-items: center;
+    text-align: center;
 }
- 
+
 .included__icon-wrap {
-    position: absolute;
-    width: 60%;
+    width: 80%;
+    max-width: 12rem;
     height: 4.5rem;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(212, 220, 230, 0.836);
+    background-color: var(--color-bg-light);
     padding: .3rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
 }
- 
+
 .included__icon {
     width: 50%;
     height: 100%;
 }
- 
+
 .included__card-header {
-    font-size: 1.6rem;
-    margin-top: 1rem;
+    font-size: var(--font-size-md);
 }
- 
+
 .included__card-text {
     text-align: left;
 }
- 
-/* CTA — matches .contact from about.css exactly */
- 
-.contact {
+
+/* CTA */
+.rooms-cta {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(212, 220, 230, 0.836);
+    background-color: var(--color-bg-room-card);
     gap: 1rem;
+    text-align: center;
+    padding: 2rem;
 }
- 
-.contact__btn {
+
+.rooms-cta__header {
+    font-size: var(--font-size-lg);
+}
+
+.rooms-cta__text {
+    font-size: var(--font-size-sm);
+    line-height: 2.2rem;
+}
+
+.rooms-cta__btn {
     padding: .5rem 3rem;
     width: fit-content;
-    background-color: rgb(77, 127, 202);
+    background-color: var(--color-accent);
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
+    border-radius: var(--border-radius-btn);
+    font-size: var(--font-size-md);
     transition: 0.3s ease;
     border: 1px solid transparent;
     cursor: pointer;
     font-family: inherit;
 }
- 
-.contact__btn:hover {
-    color: rgb(77, 127, 202);
+
+.rooms-cta__btn:hover {
+    color: var(--color-accent);
     background-color: white;
-    border-color: rgb(77, 127, 202);
+    border-color: var(--color-accent);
 }
- 
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .room__card {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .room__card--reversed {
+        flex-direction: column;
+    }
+
+    .included__grid {
+        flex-direction: column;
+    }
+}
