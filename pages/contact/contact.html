@@ -1,20 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="./contact.css">
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./contact.css" />
+
     <title>Contact</title>
-</head>
-<body class="page">
+  </head>
+
+  <body class="page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="header">
       <div class="container header__inner">
-        <a href="../../index.html" class="header__logo" aria-label="KittyPaws home">
+        <a
+          href="../../index.html"
+          class="header__logo"
+          aria-label="KittyPaws home"
+        >
           KittyPaws
         </a>
 
@@ -26,109 +31,168 @@
         </nav>
       </div>
     </header>
- 
+
     <main id="main-content">
- 
-        <div class="contact-wrapper">
- 
-            <!-- Hero -->
-            <section class="section hero-contact">
-                <div class="hero-contact__content">
-                    <h1 class="hero-contact__heading">Get In Touch</h1>
-                    <p class="hero-contact__text">We'd love to hear from you! Whether you have questions about our rooms, want to make a booking, or just want to say meow — we're here to help.</p>
-                </div>
-                <img src="../../assets/images/placeholder.png" alt="A cat relaxing at the hotel" class="hero-contact__img">
-            </section>
- 
-            <!-- Contact Info Cards -->
-            <section class="section contact-info">
-                <h2 class="contact-info__header">Contact Details</h2>
- 
-                <div class="contact-info__grid">
- 
-                    <article class="contact-info__card">
-                        <div class="contact-info__icon-wrap">
-                            <img src="../../assets/images/placeholder.png" alt="location icon" class="contact-info__icon">
-                        </div>
-                        <h3 class="contact-info__card-header">Visit Us</h3>
-                        <p class="contact-info__card-text">42 Whisker Lane</p>
-                        <p class="contact-info__card-text">Portland, OR 97201</p>
-                    </article>
- 
-                    <article class="contact-info__card">
-                        <div class="contact-info__icon-wrap">
-                            <img src="../../assets/images/placeholder.png" alt="phone icon" class="contact-info__icon">
-                        </div>
-                        <h3 class="contact-info__card-header">Call Us</h3>
-                        <p class="contact-info__card-text"><a href="tel:+15035550182" class="contact-info__link">(503) 555-0182</a></p>
-                        <p class="contact-info__card-text contact-info__hours">
-                            <ul class="contact-info__hours">
-                                <li>Mon–Fri: 8am – 6pm</li>
-                                <li>Sat–Sun: 9am – 4pm</li>
-                            </ul>
-                        </p>
-                    </article>
- 
-                    <article class="contact-info__card">
-                        <div class="contact-info__icon-wrap">
-                            <img src="../../assets/images/placeholder.png" alt="email icon" class="contact-info__icon">
-                        </div>
-                        <h3 class="contact-info__card-header">Email Us</h3>
-                        <p class="contact-info__card-text">
-                            <a href="mailto:hello@thecathotel.com" class="contact-info__link">hello@thecathotel.com</a>
-                        </p>
-                    </article>
- 
-                    <article class="contact-info__card">
-                        <div class="contact-info__icon-wrap">
-                            <img src="../../assets/images/placeholder.png" alt="instagram icon" class="contact-info__icon">
-                        </div>
-                        <h3 class="contact-info__card-header">Follow Us</h3>
-                        <p class="contact-info__card-text">
-                            <a href="https://instagram.com/thecathotelpdx" target="_blank" class="contact-info__link">@thecathotelpdx</a>
-                        </p>
-                    </article>
- 
-                </div>
-            </section>
- 
-            <!-- Contact Form — currently commented out but can be added back in when JS is added. 
-
-            <section class="section form-section">
-                <div class="form-section__content">
-                    <h2 class="form-section__header">Send Us a Message</h2>
-                    <p class="form-section__text">Fill out the form below and we'll get back to you within one business day. We can't wait to meet your cat!</p>
-                </div>
-
-                <form class="contact-form">
-                    <div class="contact-form__group">
-                        <label for="name" class="contact-form__label">Your Name</label>
-                        <input type="text" id="name" name="name" class="contact-form__input" placeholder="Jane Smith">
-                    </div>
-                    <div class="contact-form__group">
-                        <label for="email" class="contact-form__label">Email Address</label>
-                        <input type="email" id="email" name="email" class="contact-form__input" placeholder="jane@example.com">
-                    </div>
-                    <div class="contact-form__group">
-                        <label for="subject" class="contact-form__label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="contact-form__input" placeholder="Booking enquiry, general question...">
-                    </div>
-                    <div class="contact-form__group">
-                        <label for="message" class="contact-form__label">Message</label>
-                        <textarea id="message" name="message" class="contact-form__input contact-form__textarea" placeholder="Tell us about your cat and how we can help!"></textarea>
-                    </div>
-                    <button type="submit" class="contact-form__btn">Send Message</button>
-                </form>
-            </section>
-            -->
- 
+      <section class="hero-contact" aria-labelledby="contact-hero-title">
+        <div class="container hero-contact__inner">
+          <div class="hero-contact__content">
+            <h1 class="hero-contact__heading" id="contact-hero-title">
+              Get In Touch
+            </h1>
+            <p class="hero-contact__text">
+              We'd love to hear from you! Whether you have questions about our
+              rooms, want to make a booking, or just want to say meow — we're
+              here to help.
+            </p>
+          </div>
+          <div class="hero-contact__media">
+            <img
+              src="../../assets/images/home/hero-cat.jpg"
+              alt="A cat relaxing at the hotel"
+              class="hero-contact__img"
+            />
+          </div>
         </div>
+      </section>
+
+      <section
+        class="contact-overview"
+        aria-labelledby="contact-overview-title"
+      >
+        <div class="container contact-overview__inner">
+          <h2 class="visually-hidden" id="contact-overview-title">
+            Contact details and location
+          </h2>
+
+          <article class="contact-panel contact-panel--details">
+            <h3 class="contact-panel__title">Get in touch</h3>
+
+            <ul class="contact-panel__list">
+              <li class="contact-panel__item">
+                <!-- todo: remobe alts for icons-->
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-panel__icon"
+                />
+                <span class="contact-panel__label">Phone:</span>
+                <a href="tel:+12345678900" class="contact-panel__link"
+                  >+1 (234) 567-8900</a
+                >
+              </li>
+              <li class="contact-panel__item">
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-panel__icon"
+                />
+                <span class="contact-panel__label">Email:</span>
+                <a href="mailto:hello@cathotel.com" class="contact-panel__link"
+                  >hello@cathotel.com</a
+                >
+              </li>
+              <li class="contact-panel__item">
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-panel__icon"
+                />
+                <span class="contact-panel__label">Address:</span>
+                <span class="contact-panel__value"
+                  >25 Cozy Street, Catville</span
+                >
+              </li>
+              <li class="contact-panel__item">
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-panel__icon"
+                />
+                <span class="contact-panel__label">Opening Hours:</span>
+                <div class="contact-panel__hours">
+                  <p class="contact-panel__hours-line">Mon-Sat: 9:00 - 18.00</p>
+                  <p class="contact-panel__hours-line">Sun: Closed</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="contact-panel contact-panel--location">
+            <h3 class="contact-panel__title">Our Location</h3>
+            <p class="contact-panel__text">
+              We are located in a quiet neighborhood, easy to find with ample
+              parking available.
+            </p>
+
+            <div class="contact-panel__map">
+              <img
+                src="../../assets/images/home/hero-cat.jpg"
+                alt="Map placeholder showing the location of KittyPaws"
+                class="contact-panel__map-image"
+              />
+            </div>
+
+            <p class="contact-panel__address">25 Cozy Street, Catville</p>
+            <p class="contact-panel__text">
+              You'll see our "Hotel for Cats" sign out front. Feel free to use
+              our designated parking spots.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-links" aria-labelledby="contact-links-title">
+        <div class="container contact-links__inner">
+          <h2 class="contact-links__title" id="contact-links-title">
+            See What Our Guests & Cats Say
+          </h2>
+          <p class="contact-links__text">
+            Find out why our cat hotel is the purr-fect choice. Read rave
+            reviews from our human clients or learn more about our cozy rooms
+            for your cat.
+          </p>
+
+          <div class="contact-links__list">
+            <article class="contact-links__card">
+              <div class="contact-links__card-heading">
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-links__card-icon"
+                />
+                <h3 class="contact-links__card-title">Customer Reviews</h3>
+              </div>
+              <p class="contact-links__card-text">
+                Read heartwarming testimonials from our happy human clients.
+              </p>
+              <a href="../reviews/reviews.html" class="contact-links__button"
+                >Read Reviews</a
+              >
+            </article>
+
+            <article class="contact-links__card">
+              <div class="contact-links__card-heading">
+                <img
+                  src="../../assets/images/home/hero-cat.jpg"
+                  alt=""
+                  class="contact-links__card-icon"
+                />
+                <h3 class="contact-links__card-title">Our Rooms</h3>
+              </div>
+              <p class="contact-links__card-text">
+                Let your cat enjoy our comfortable, cozy and fun-filled rooms.
+              </p>
+              <a href="../rooms/rooms.html" class="contact-links__button"
+                >View Rooms</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
- 
+
     <footer class="footer">
       <p class="footer__text">2026 KittyPaws &copy;</p>
     </footer>
- 
-</body>
+  </body>
 </html>
- 
