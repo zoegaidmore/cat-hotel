@@ -3,35 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cat Hotel</title>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+   
+
+    <title>KittyPaws</title>
   </head>
 
-  <body>
-    <header>
-      <div class="container">`
-        <h1>Cat Hotel</h1>
+  <body class="page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <nav aria-label="Main navigation">
-          <ul>
-            <li><a href="pages/about/about.html">About</a></li>
-            <li><a href="pages/rooms/rooms.html">Rooms</a></li>
-            <li><a href="pages/reviews/reviews.html">Reviews</a></li>
-            <li><a href="pages/contact/contact.html">Contact</a></li>
-          </ul>
+    <header class="header">
+      <div class="container header__inner">
+        <span class="header__logo">KittyPaws</span>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="./pages/about/about.html" class="header__link">About</a>
+          <a href="./pages/rooms/rooms.html" class="header__link">Rooms</a>
+          <a href="./pages/reviews/reviews.html" class="header__link">Reviews</a>
+          <a href="./pages/contact/contact.html" class="header__link">Contact</a>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              A Cozy Stay for Your Cat
+            </h1>
+
+            <p class="hero__text">
+              KittyPaws is a calm and comfortable cat hotel where every guest
+              enjoys gentle care, a clean private space, and a relaxing
+              environment while you are away.
+            </p>
+
+            <a href="./pages/about/about.html" class="button hero__button"
+              >Learn More</a
+            >
+          </div>
+
+          <img
+            src="./assets/images/home/hero-cat.jpg"
+            alt="A relaxed cat resting in a cozy room at KittyPaws"
+            class="hero__image"
+          />
+        </div>
+      </section>
+
+      <section class="benefits" aria-labelledby="benefits-title">
+        <div class="container benefits__inner">
+          <h2 class="benefits__title" id="benefits-title">
+            Comfort in Every Detail
+          </h2>
+
+          <div class="benefits__list">
+            <div class="benefits__card">
+              <img
+                src="./assets/images/home/calm-cat.jpg"
+                alt="Calm resting area for cats"
+                class="benefits__image"
+              />
+              <p class="benefits__text">
+                Calm, peaceful spaces where every cat can relax and feel safe.
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <img
+                src="./assets/images/home/environment-cat.jpg"
+                alt="Clean and fresh cat environment"
+                class="benefits__image"
+              />
+              <p class="benefits__text">
+                A clean, fresh space maintained daily for comfort and
+                well-being.
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <img
+                src="./assets/images/home/routine-cat.jpg"
+                alt="Daily routine for cats"
+                class="benefits__image"
+              />
+              <p class="benefits__text">
+                A gentle daily routine with time for feeding, rest, and calm
+                care.
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <img
+                src="./assets/images/home/care-cat.jpg"
+                alt="Personal care for each cat"
+                class="benefits__image"
+              />
+              <p class="benefits__text">
+                Warm, personal attention for every cat and their unique needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote" aria-labelledby="quote-title">
+        <div class="container quote__inner">
+          <h2 class="visually-hidden" id="quote-title">About our philosophy</h2>
+
+          <blockquote class="quote__content">
+            <p class="quote__text">
+              At KittyPaws, we make sure
+              every cat feels safe, comfortable, and truly at home, so you can
+              have peace of mind while you’re apart.
+            </p>
+          </blockquote>
+
+          <p class="quote__author">-Elizabeth</p>
+        </div>
+      </section>
+
+      <section class="rooms-banner" aria-labelledby="rooms-banner-title">
+        <div class="container rooms-banner__inner">
+          <div class="rooms-banner__content">
+            <h2 class="rooms-banner__title" id="rooms-banner-title">
+              Explore our cozy rooms for your cat
+            </h2>
+            <p class="rooms-banner__text">
+              Each room is designed for comfort. Find the perfect space for your
+              cat.
+            </p>
+          </div>
+
+          <a
+            href="./pages/rooms/rooms.html"
+            class="button rooms-banner__button"
+          >
+            View Rooms
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; Copyright</p>
-      </div>
+    <footer class="footer">
+      <p class="footer__text">2026 KittyPaws &copy;</p>
     </footer>
   </body>
 </html>
