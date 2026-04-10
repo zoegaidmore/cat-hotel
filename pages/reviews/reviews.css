@@ -44,7 +44,6 @@
 }
 
 .reviews__card:hover,
-.reviews__card:focus-visible,
 .guests__card:hover {
   transform: translateY(-4px);
   box-shadow: rgba(99, 99, 99, 0.336) 0px 2px 8px 0px;
