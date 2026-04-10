@@ -46,28 +46,43 @@ main {
 
 .hero__inner {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
   min-width: 0;
 }
 
 .hero__content {
-  flex: 1 1 45%;
-  max-width: 28rem;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 27rem;
+  min-width: 0;
+}
+
+.hero__media {
+  display: flex;
+  flex: 0 1 28rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 18rem;
+  overflow: hidden;
+  background-color: #6b7280;
   min-width: 0;
 }
 
 .hero__title {
-  margin-bottom: 1rem;
+  margin: 0;
   font-size: var(--font-size-xl);
   line-height: 1.1;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-extra-bold);
   color: var(--color-text-inverse);
 }
 
 .hero__text {
-  margin-bottom: 1.5rem;
+  margin: 0;
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   font-style: var(--font-style-normal);
@@ -75,15 +90,14 @@ main {
 }
 
 .hero__image {
-  flex: 1 1 50%;
+  display: block;
   width: 100%;
   height: 100%;
-  min-width: 0;
+  object-fit: cover;
 }
 
 .benefits {
   padding: 2rem 0 3.5rem;
-  background-color: var(--color-bg-primary);
 }
 
 .benefits__inner {
@@ -92,8 +106,8 @@ main {
 
 .benefits__title {
   margin-bottom: 3rem;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extra-bold);
   color: var(--color-text-primary);
 }
 
@@ -130,6 +144,8 @@ main {
   line-height: 1.4;
   color: var(--color-text-primary);
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .quote {
@@ -138,11 +154,12 @@ main {
 }
 
 .quote__inner {
-  max-width: 52rem;
+  max-width: 48rem;
 }
 
 .quote__content {
-  margin-bottom: 1rem;
+  max-width: 42rem;
+  margin: 0 auto 1rem;
 }
 
 .quote__text {
@@ -154,6 +171,9 @@ main {
 }
 
 .quote__author {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-right: 2rem;
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   font-style: var(--font-style-normal);
@@ -163,7 +183,6 @@ main {
 
 .rooms-banner {
   padding: 4rem 0;
-  background-color: var(--color-bg-primary);
 }
 
 .rooms-banner__inner {
@@ -189,6 +208,7 @@ main {
   font-weight: var(--font-weight-bold);
   font-style: var(--font-style-normal);
   color: var(--color-text-inverse);
+  margin: 0;
 }
 
 .rooms-banner__text {
@@ -196,6 +216,8 @@ main {
   font-weight: var(--font-weight-regular);
   font-style: var(--font-style-normal);
   color: var(--color-text-secondary);
+  margin: 0;
+  padding: 0;
 }
 
 .rooms-banner__button {
@@ -211,9 +233,15 @@ main {
   }
 
   .hero__content,
+  .hero__media,
   .rooms-banner__content,
   .hero__image {
     max-width: 100%;
+  }
+
+  .hero__media {
+    width: 100%;
+    flex-basis: auto;
   }
 }
 
@@ -223,7 +251,7 @@ main {
   }
 
   .hero {
-    padding: 4rem 0;
+    padding: 2.5rem 0 4rem;
   }
 
   .hero__title {
@@ -234,8 +262,16 @@ main {
     font-size: var(--font-size-lg);
   }
 
+  .quote {
+    padding: 3.5rem 0;
+  }
+
   .quote__text {
     font-size: var(--font-size-md);
+  }
+
+  .quote__author {
+    padding-right: 1rem;
   }
 
   .rooms-banner__inner {
