@@ -41,7 +41,7 @@ main {
 
 .hero {
   padding: 3rem 5rem 6rem 5rem;
-  background-color: var(--color-bg-tertiary);
+  background-color: var(--color-bg-dark);
 }
 
 .hero__inner {
@@ -102,6 +102,9 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .benefits__card {
@@ -131,7 +134,7 @@ main {
 
 .quote {
   padding: 6rem 0;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-light);
 }
 
 .quote__inner {
