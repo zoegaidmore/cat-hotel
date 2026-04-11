@@ -9,7 +9,7 @@
 
     <title>Reviews</title>
   </head>
-  <body>
+  <body class="page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="header">
@@ -32,194 +32,210 @@
     </header>
 
     <main id="main-content">
-      <div class="wrapper">
-        <section class="section hero-reviews">
-          <h1 class="hero-reviews__heading">Reviews</h1>
-          <p class="hero-reviews__text">
-            See why our guests and their cats love our hotel. Read genuine
-            reviews from happy cat owners who trust us to care for their furry
-            friends.
-          </p>
-        </section>
-
-        <section class="section reviews">
-          <article class="reviews__card">
-            <div class="reviews__top-row">
-              <img
-                class="reviews__img"
-                src="../../assets/images/review/reviews-user-1.jpg"
-                alt="James K. selfie"
-              />
-              <div class="reviews__header">
-                <h3 class="reviews__heading">James K.</h3>
-                <div class="reviews__rating">
-                  ⭐⭐⭐⭐⭐
-                  <span class="visually-hidden">5 out of 5 stars</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="reviews__text">
-              Our cat Luna has stayed here multiple times, and each visit has
-              been wonderful. The staff is attentive and caring, and Luna always
-              comes home relaxed and happy.
+      <section class="hero" aria-labelledby="reviews-hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="reviews-hero-title">Reviews</h1>
+            <p class="hero__text">
+              See why our guests and their cats love our hotel. Read genuine
+              reviews from happy cat owners who trust us to care for their furry
+              friends.
             </p>
-            <p class="reviews__cat">Cat: Luna</p>
-          </article>
-          <article class="reviews__card">
-            <div class="reviews__top-row">
-              <img
-                class="reviews__img"
-                src="../../assets/images/review/reviews-user-2.jpg"
-                alt="Sarah M. selfie"
-              />
-              <div class="reviews__header">
-                <h3 class="reviews__heading">Sarah M.</h3>
-                <div class="reviews__rating">
-                  ⭐⭐⭐⭐⭐
-                  <span class="visually-hidden">5 out of 5 stars</span>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="hero__media">
+            <img
+              src="../../assets/images/review/reviews-hotel.jpg"
+              alt="A cat relaxing at the hotel"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
 
-            <p class="reviews__text">
-              The best cat hotel we've ever used! Our kitty, Whiskers was so
-              well cared for and loved. The staff sent us daily updates and cute
-              photos. Highly recommended!
-            </p>
-            <p class="reviews__cat">Cat: Whiskers</p>
-          </article>
-          <article class="reviews__card">
-            <div class="reviews__top-row">
-              <img
-                class="reviews__img"
-                src="../../assets/images/review/reviews-user-3.jpg"
-                alt="Michael S. selfie"
-              />
-              <div class="reviews__header">
-                <h3 class="reviews__heading">Michael S.</h3>
-                <div class="reviews__rating">
-                  ⭐⭐⭐⭐⭐
-                  <span class="visually-hidden">5 out of 5 stars</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="reviews__text">
-              Bella is a shy cat, but the staff made her feel so comfortable and
-              calm here. The rooms are private and quiet, perfect for our
-              nervous kitty.
-            </p>
-            <p class="reviews__cat">Cat: Bella</p>
-          </article>
-          <article class="reviews__card">
-            <div class="reviews__top-row">
-              <img
-                class="reviews__img"
-                src="../../assets/images/review/reviews-user-4.jpg"
-                alt="Emily R. selfie"
-              />
-              <div class="reviews__header">
-                <h3 class="reviews__heading">Emily R.</h3>
-                <div class="reviews__rating">
-                  ⭐⭐⭐⭐⭐
-                  <span class="visually-hidden">5 out of 5 stars</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="reviews__text">
-              Oliver felt right at home in this cozy and clean cat hotel. The
-              staff is so friendly and took wonderful care of our little guy. He
-              loves it here.
-            </p>
-            <p class="reviews__cat">Cat: Oliver</p>
-          </article>
-        </section>
-
-        <section class="section guests">
-          <h2 class="guests__heading">Meet Our Happy Guests</h2>
-          <p class="guests__text">
-            Our feline visitors are always purring with delight
-          </p>
-          <div class="guests__container">
-            <article class="guests__card">
-              <div class="guests__img-wrapper">
+      <section class="section reviews" aria-labelledby="reviews-list-title">
+        <div class="reviews__inner">
+          <h2 class="reviews__title" id="reviews-list-title">
+            What Our Clients Say
+          </h2>
+          <div class="reviews__list">
+            <article class="reviews__card">
+              <div class="reviews__top-row">
                 <img
-                  class="guests__img"
-                  src="../../assets/images/review/review-cat-1.jpg"
-                  alt="Whiskers the cat lounging on the floor"
+                  class="reviews__img"
+                  src="../../assets/images/review/reviews-user-1.jpg"
+                  alt="James K. selfie"
                 />
+                <div class="reviews__header">
+                  <h3 class="reviews__heading">James K.</h3>
+                  <div class="reviews__rating" aria-label="5 out of 5 stars">
+                    <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
               </div>
-              <div class="guests__body">
-                <img
-                  src="../../assets/images/review/paws.png"
-                  alt="cat paws icon"
-                  class="guests__icon"
-                />
-                <h3 class="guests__name">Whiskers</h3>
-              </div>
+
+              <p class="reviews__text">
+                Our cat Luna has stayed here multiple times, and each visit has
+                been wonderful. The staff is attentive and caring, and Luna
+                always comes home relaxed and happy.
+              </p>
+              <p class="reviews__cat">Cat: Luna</p>
             </article>
-
-            <article class="guests__card">
-              <div class="guests__img-wrapper">
+            <article class="reviews__card">
+              <div class="reviews__top-row">
                 <img
-                  class="guests__img"
-                  src="../../assets/images/review/review-cat-2.jpg"
-                  alt="Luna the cat staring at you through a door"
+                  class="reviews__img"
+                  src="../../assets/images/review/reviews-user-2.jpg"
+                  alt="Sarah M. selfie"
                 />
+                <div class="reviews__header">
+                  <h3 class="reviews__heading">Sarah M.</h3>
+                  <div class="reviews__rating" aria-label="5 out of 5 stars">
+                    <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
               </div>
-              <div class="guests__body">
-                <img
-                  src="../../assets/images/review/paws.png"
-                  alt="cat paws icon"
-                  class="guests__icon"
-                />
 
-                <h3 class="guests__name">Luna</h3>
-              </div>
+              <p class="reviews__text">
+                The best cat hotel we've ever used! Our kitty, Whiskers was so
+                well cared for and loved. The staff sent us daily updates and
+                cute photos. Highly recommended!
+              </p>
+              <p class="reviews__cat">Cat: Whiskers</p>
             </article>
-
-            <article class="guests__card">
-              <div class="guests__img-wrapper">
+            <article class="reviews__card">
+              <div class="reviews__top-row">
                 <img
-                  class="guests__img"
-                  src="../../assets/images/review/review-cat-3.jpg"
-                  alt="Oliver the cat lounging on a couch and looking at you"
+                  class="reviews__img"
+                  src="../../assets/images/review/reviews-user-3.jpg"
+                  alt="Michael S. selfie"
                 />
+                <div class="reviews__header">
+                  <h3 class="reviews__heading">Michael S.</h3>
+                  <div class="reviews__rating" aria-label="5 out of 5 stars">
+                    <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
               </div>
-              <div class="guests__body">
-                <img
-                  src="../../assets/images/review/paws.png"
-                  alt="cat paws icon"
-                  class="guests__icon"
-                />
 
-                <h3 class="guests__name">Oliver</h3>
-              </div>
+              <p class="reviews__text">
+                Bella is a shy cat, but the staff made her feel so comfortable
+                and calm here. The rooms are private and quiet, perfect for our
+                nervous kitty.
+              </p>
+              <p class="reviews__cat">Cat: Bella</p>
             </article>
-
-            <article class="guests__card">
-              <div class="guests__img-wrapper">
+            <article class="reviews__card">
+              <div class="reviews__top-row">
                 <img
-                  class="guests__img"
-                  src="../../assets/images/review/review-cat-4.jpg"
-                  alt="Bella the cat lounging and staring intently up close"
+                  class="reviews__img"
+                  src="../../assets/images/review/reviews-user-4.jpg"
+                  alt="Emily R. selfie"
                 />
+                <div class="reviews__header">
+                  <h3 class="reviews__heading">Emily R.</h3>
+                  <div class="reviews__rating" aria-label="5 out of 5 stars">
+                    <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
               </div>
-              <div class="guests__body">
-                <img
-                  src="../../assets/images/review/paws.png"
-                  alt="cat paws icon"
-                  class="guests__icon"
-                />
 
-                <h3 class="guests__name">Bella</h3>
-              </div>
+              <p class="reviews__text">
+                Oliver felt right at home in this cozy and clean cat hotel. The
+                staff is so friendly and took wonderful care of our little guy.
+                He loves it here.
+              </p>
+              <p class="reviews__cat">Cat: Oliver</p>
             </article>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="section guests" aria-labelledby="guests-title">
+        <h2 class="guests__heading" id="guests-title">Meet Our Happy Guests</h2>
+        <p class="guests__text">
+          Our feline visitors are always purring with delight
+        </p>
+        <div class="guests__container">
+          <article class="guests__card">
+            <div class="guests__img-wrapper">
+              <img
+                class="guests__img"
+                src="../../assets/images/review/review-cat-1.jpg"
+                alt="Whiskers the cat lounging on the floor"
+              />
+            </div>
+            <div class="guests__body">
+              <img
+                src="../../assets/images/review/paws.png"
+                alt=""
+                aria-hidden="true"
+                class="guests__icon"
+              />
+              <h3 class="guests__name">Whiskers</h3>
+            </div>
+          </article>
+
+          <article class="guests__card">
+            <div class="guests__img-wrapper">
+              <img
+                class="guests__img"
+                src="../../assets/images/review/review-cat-2.jpg"
+                alt="Luna the cat staring at you through a door"
+              />
+            </div>
+            <div class="guests__body">
+              <img
+                src="../../assets/images/review/paws.png"
+                alt=""
+                aria-hidden="true"
+                class="guests__icon"
+              />
+
+              <h3 class="guests__name">Luna</h3>
+            </div>
+          </article>
+
+          <article class="guests__card">
+            <div class="guests__img-wrapper">
+              <img
+                class="guests__img"
+                src="../../assets/images/review/review-cat-3.jpg"
+                alt="Oliver the cat lounging on a couch and looking at you"
+              />
+            </div>
+            <div class="guests__body">
+              <img
+                src="../../assets/images/review/paws.png"
+                alt=""
+                aria-hidden="true"
+                class="guests__icon"
+              />
+
+              <h3 class="guests__name">Oliver</h3>
+            </div>
+          </article>
+
+          <article class="guests__card">
+            <div class="guests__img-wrapper">
+              <img
+                class="guests__img"
+                src="../../assets/images/review/review-cat-4.jpg"
+                alt="Bella the cat lounging and staring intently up close"
+              />
+            </div>
+            <div class="guests__body">
+              <img
+                src="../../assets/images/review/paws.png"
+                alt=""
+                aria-hidden="true"
+                class="guests__icon"
+              />
+
+              <h3 class="guests__name">Bella</h3>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

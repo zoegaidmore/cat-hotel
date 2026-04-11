@@ -32,26 +32,28 @@
     </header>
 
     <main id="main-content">
-      <section class="section hero-about" aria-labelledby="about-hero-title">
-        <div class="hero-about__container container-flex-center">
-          <div class="hero-about__content">
-            <h1 class="hero-about__heading" id="about-hero-title">
+      <section class="hero" aria-labelledby="about-hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="about-hero-title">
               About Our Cat Hotel
             </h1>
-            <p class="hero-about__text">
+            <p class="hero__text">
               Welcome to our cat hotel, where your feline friends are treated
               like family.
             </p>
-            <p class="hero-about__text">
+            <p class="hero__text">
               Learn more about what makes us the best choice for your cat.
             </p>
           </div>
 
-          <img
-            src="../../assets/images/about/about-hero-img.jpg"
-            alt="Brown cat sleeping in a cat scratcher"
-            class="hero-about__img"
-          />
+          <div class="hero__media">
+            <img
+              src="../../assets/images/about/about-hotel.jpg"
+              alt="A cat relaxing at the hotel"
+              class="hero__image"
+            />
+          </div>
         </div>
       </section>
 
@@ -63,7 +65,7 @@
             <div class="mission__img-container">
               <img
                 src="../../assets/images/about/about-mission.png"
-                alt="mission icon"
+                alt=""
                 class="mission__img"
               />
             </div>
@@ -77,7 +79,7 @@
             <div class="mission__img-container">
               <img
                 src="../../assets/images/about/about-facility.png"
-                alt="Cat facility icon"
+                alt=""
                 class="mission__img"
               />
             </div>
@@ -91,7 +93,7 @@
             <div class="mission__img-container">
               <img
                 src="../../assets/images/about/about-promise.png"
-                alt="Cat promise icon"
+                alt=""
                 class="mission__img"
               />
             </div>
@@ -128,16 +130,20 @@
         </div>
       </section>
 
-      <section class="section contact" aria-labelledby="about-contact-title">
-        <div class="contact__content">
-          <h2 class="contact__header" id="about-contact-title">
-            Have any questions about our cat hotel?
-          </h2>
-          <p class="contact__text">
-            Feel free to get in touch. We're happy to help!
-          </p>
+      <section class="cta-banner" aria-labelledby="about-contact-title">
+        <div class="container cta-banner__inner">
+          <div class="cta-banner__content">
+            <h2 class="cta-banner__title" id="about-contact-title">
+              Have any questions about our cat hotel?
+            </h2>
+            <p class="cta-banner__text">
+              Feel free to get in touch. We're happy to help!
+            </p>
+          </div>
+          <a href="../contact/contact.html" class="button cta-banner__button"
+            >Contact us</a
+          >
         </div>
-        <a href="../contact/contact.html" class="contact__btn">Contact us</a>
       </section>
     </main>
 
