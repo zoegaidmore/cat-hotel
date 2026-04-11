@@ -119,6 +119,12 @@ body {
   outline-offset: 3px;
 }
 
+.button:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
 .skip-link {
   position: absolute;
   top: -100px;
@@ -284,7 +290,9 @@ body {
 
 .cta-banner__button {
   flex-shrink: 0;
+  min-width: 12rem;
   border-color: var(--color-text-inverse);
+  text-align: center;
 }
 
 @media (max-width: 900px) {
