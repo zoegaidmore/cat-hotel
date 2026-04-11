@@ -268,6 +268,11 @@
   margin-top: auto;
 }
 
+.contact-links__button:focus-visible {
+  outline: 3px solid var(--color-bg-dark);
+  outline-offset: 3px;
+}
+
 @media (max-width: 900px) {
   .contact-overview__panels,
   .contact-links__list {
