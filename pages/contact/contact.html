@@ -58,84 +58,90 @@
         aria-labelledby="contact-overview-title"
       >
         <div class="container contact-overview__inner">
-          <h2 class="visually-hidden" id="contact-overview-title">
+          <h2 class="contact-overview__title" id="contact-overview-title">
             Contact details and location
           </h2>
 
-          <article class="contact-panel contact-panel--details">
-            <h3 class="contact-panel__title">Get in touch</h3>
+          <div class="contact-overview__panels">
+            <article class="contact-panel contact-panel--details">
+              <h3 class="contact-panel__title">Get in touch</h3>
 
-            <ul class="contact-panel__list">
-              <li class="contact-panel__item">
-                <!-- todo: remobe alts for icons-->
+              <ul class="contact-panel__list">
+                <li class="contact-panel__item">
+                  <!-- todo: remobe alts for icons-->
+                  <img
+                    src="../../assets/images/home/hero-cat.jpg"
+                    alt=""
+                    class="contact-panel__icon"
+                  />
+                  <span class="contact-panel__label">Phone:</span>
+                  <a href="tel:+12345678900" class="contact-panel__link"
+                    >+1 (234) 567-8900</a
+                  >
+                </li>
+                <li class="contact-panel__item">
+                  <img
+                    src="../../assets/images/home/hero-cat.jpg"
+                    alt=""
+                    class="contact-panel__icon"
+                  />
+                  <span class="contact-panel__label">Email:</span>
+                  <a
+                    href="mailto:hello@cathotel.com"
+                    class="contact-panel__link"
+                    >hello@cathotel.com</a
+                  >
+                </li>
+                <li class="contact-panel__item">
+                  <img
+                    src="../../assets/images/home/hero-cat.jpg"
+                    alt=""
+                    class="contact-panel__icon"
+                  />
+                  <span class="contact-panel__label">Address:</span>
+                  <span class="contact-panel__value"
+                    >25 Cozy Street, Catville</span
+                  >
+                </li>
+                <li class="contact-panel__item">
+                  <img
+                    src="../../assets/images/home/hero-cat.jpg"
+                    alt=""
+                    class="contact-panel__icon"
+                  />
+                  <span class="contact-panel__label">Opening Hours:</span>
+                  <div class="contact-panel__hours">
+                    <p class="contact-panel__hours-line">
+                      Mon-Sat: 9:00 - 18.00
+                    </p>
+                    <p class="contact-panel__hours-line">Sun: Closed</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="contact-panel contact-panel--location">
+              <h3 class="contact-panel__title">Our Location</h3>
+              <p class="contact-panel__text">
+                We are located in a quiet neighborhood, easy to find with ample
+                parking available.
+              </p>
+
+              <div class="contact-panel__map">
                 <img
                   src="../../assets/images/home/hero-cat.jpg"
-                  alt=""
-                  class="contact-panel__icon"
+                  alt="Map placeholder showing the location of KittyPaws"
+                  class="contact-panel__map-image"
                 />
-                <span class="contact-panel__label">Phone:</span>
-                <a href="tel:+12345678900" class="contact-panel__link"
-                  >+1 (234) 567-8900</a
-                >
-              </li>
-              <li class="contact-panel__item">
-                <img
-                  src="../../assets/images/home/hero-cat.jpg"
-                  alt=""
-                  class="contact-panel__icon"
-                />
-                <span class="contact-panel__label">Email:</span>
-                <a href="mailto:hello@cathotel.com" class="contact-panel__link"
-                  >hello@cathotel.com</a
-                >
-              </li>
-              <li class="contact-panel__item">
-                <img
-                  src="../../assets/images/home/hero-cat.jpg"
-                  alt=""
-                  class="contact-panel__icon"
-                />
-                <span class="contact-panel__label">Address:</span>
-                <span class="contact-panel__value"
-                  >25 Cozy Street, Catville</span
-                >
-              </li>
-              <li class="contact-panel__item">
-                <img
-                  src="../../assets/images/home/hero-cat.jpg"
-                  alt=""
-                  class="contact-panel__icon"
-                />
-                <span class="contact-panel__label">Opening Hours:</span>
-                <div class="contact-panel__hours">
-                  <p class="contact-panel__hours-line">Mon-Sat: 9:00 - 18.00</p>
-                  <p class="contact-panel__hours-line">Sun: Closed</p>
-                </div>
-              </li>
-            </ul>
-          </article>
+              </div>
 
-          <article class="contact-panel contact-panel--location">
-            <h3 class="contact-panel__title">Our Location</h3>
-            <p class="contact-panel__text">
-              We are located in a quiet neighborhood, easy to find with ample
-              parking available.
-            </p>
-
-            <div class="contact-panel__map">
-              <img
-                src="../../assets/images/home/hero-cat.jpg"
-                alt="Map placeholder showing the location of KittyPaws"
-                class="contact-panel__map-image"
-              />
-            </div>
-
-            <p class="contact-panel__address">25 Cozy Street, Catville</p>
-            <p class="contact-panel__text">
-              You'll see our "Hotel for Cats" sign out front. Feel free to use
-              our designated parking spots.
-            </p>
-          </article>
+              <p class="contact-panel__address">25 Cozy Street, Catville</p>
+              <p class="contact-panel__text">
+                You'll see our "Hotel for Cats" sign out front. Feel free to use
+                our designated parking spots.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
