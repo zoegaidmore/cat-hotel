@@ -18,7 +18,7 @@
 .contact-overview__inner {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .contact-overview__title {
@@ -42,12 +42,14 @@
   padding: 2.25rem 2rem 2rem;
   border: 1px solid var(--color-border);
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--color-bg-light);
 }
 
 .contact-panel--details {
   flex: 1 1 0;
+  position: relative;
   align-items: center;
+  padding-top: 4rem;
 }
 
 .contact-panel--location {
@@ -55,12 +57,15 @@
 }
 
 .contact-panel__badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 5.5rem;
   height: 5.5rem;
-  margin-bottom: -0.25rem;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: rgba(77, 127, 202, 0.12);
 }
@@ -231,7 +236,8 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background-color: white;
+  background-color: var(--color-text-inverse);
+  border: 2px solid var(--color-accent-border);
   border-radius: var(--border-radius-card);
   text-align: center;
 }
@@ -259,14 +265,62 @@
 }
 
 .contact-links__button {
-  display: inline-block;
   margin-top: auto;
-  padding: 0.75rem 2rem;
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-  border-radius: var(--border-radius-btn);
-  color: var(--color-text-inverse);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .contact-overview__panels,
+  .contact-links__list {
+    flex-direction: column;
+  }
+
+  .contact-panel--details,
+  .contact-panel--location {
+    flex: 1 1 auto;
+  }
+
+  .contact-panel__hours {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-overview {
+    padding: 3rem 0;
+  }
+
+  .contact-overview__title,
+  .contact-links__title {
+    font-size: var(--font-size-md);
+  }
+
+  .contact-panel,
+  .contact-links__card {
+    padding: 1.5rem;
+  }
+
+  .contact-panel--details {
+    padding-top: 3.5rem;
+  }
+
+  .contact-panel__badge {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .contact-panel__badge-image {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .contact-links {
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .contact-links__inner {
+    padding: 0 1rem;
+  }
 }
