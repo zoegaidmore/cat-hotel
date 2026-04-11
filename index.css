@@ -15,15 +15,18 @@ main {
 }
 
 .benefits {
-  padding: 2rem 0 3.5rem;
+  padding: 4rem 0 3.5rem;
 }
 
 .benefits__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   text-align: center;
 }
 
 .benefits__title {
-  margin-bottom: 3rem;
+  margin: 0;
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-extra-bold);
   color: var(--color-text-primary);

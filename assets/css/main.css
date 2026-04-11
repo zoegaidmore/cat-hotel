@@ -115,7 +115,7 @@ body {
 }
 
 .button:focus-visible {
-  outline: 3px solid var(--color-text-inverse);
+  outline: 3px solid var(--color-bg-dark);
   outline-offset: 3px;
 }
 
