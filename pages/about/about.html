@@ -9,18 +9,12 @@
 
     <title>About</title>
   </head>
-  <body class="page">
+  <body class="page" id="top">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="header">
       <div class="container header__inner">
-        <a
-          href="../../index.html"
-          class="header__logo"
-          aria-label="KittyPaws home"
-        >
-          KittyPaws
-        </a>
+        <span class="header__logo"> KittyPaws </span>
 
         <nav class="header__nav" aria-label="Main navigation">
           <a href="./about.html" class="header__link">About</a>
@@ -35,16 +29,11 @@
       <section class="hero" aria-labelledby="about-hero-title">
         <div class="container hero__inner">
           <div class="hero__content">
-            <h1 class="hero__title" id="about-hero-title">
-              About Our Cat Hotel
-            </h1>
+            <h1 class="hero__title" id="about-hero-title">About Our Cat Hotel</h1>
             <p class="hero__text">
-              Welcome to our cat hotel, where your feline friends are treated
-              like family.
+              Welcome to our cat hotel, where your feline friends are treated like family.
             </p>
-            <p class="hero__text">
-              Learn more about what makes us the best choice for your cat.
-            </p>
+            <p class="hero__text">Learn more about what makes us the best choice for your cat.</p>
           </div>
 
           <div class="hero__media">
@@ -63,44 +52,30 @@
         <div class="mission__container">
           <article class="mission__card">
             <div class="mission__img-container">
-              <img
-                src="../../assets/images/about/about-mission.png"
-                alt=""
-                class="mission__img"
-              />
+              <img src="../../assets/images/about/about-mission.png" alt="" class="mission__img" />
             </div>
             <h3 class="mission__card-header">Our Mission</h3>
             <p class="mission__card-text">
-              We strive to provide a calm, safe, and home-like environment for
-              every cat in our care.
+              We strive to provide a calm, safe, and home-like environment for every cat in our
+              care.
             </p>
           </article>
           <article class="mission__card">
             <div class="mission__img-container">
-              <img
-                src="../../assets/images/about/about-facility.png"
-                alt=""
-                class="mission__img"
-              />
+              <img src="../../assets/images/about/about-facility.png" alt="" class="mission__img" />
             </div>
             <h3 class="mission__card-header">Our Facility</h3>
             <p class="mission__card-text">
-              Our cat hotel has cozy suites, fun play areas, quality food, and
-              daily care
+              Our cat hotel has cozy suites, fun play areas, quality food, and daily care
             </p>
           </article>
           <article class="mission__card">
             <div class="mission__img-container">
-              <img
-                src="../../assets/images/about/about-promise.png"
-                alt=""
-                class="mission__img"
-              />
+              <img src="../../assets/images/about/about-promise.png" alt="" class="mission__img" />
             </div>
             <h3 class="mission__card-header">Our Promise</h3>
             <p class="mission__card-text">
-              We treat every cat as our own, giving them the love and attention
-              they deserve.
+              We treat every cat as our own, giving them the love and attention they deserve.
             </p>
           </article>
         </div>
@@ -109,16 +84,14 @@
       <section class="section staff" aria-labelledby="staff-title">
         <div class="staff__container container-flex-center">
           <div class="staff__content">
-            <h2 class="staff__header" id="staff-title">
-              Experienced & Caring Staff
-            </h2>
+            <h2 class="staff__header" id="staff-title">Experienced & Caring Staff</h2>
             <p class="staff__text">
-              Our team consists of dedicated and experienced cat lovers who are
-              trained to provide the best care possible.
+              Our team consists of dedicated and experienced cat lovers who are trained to provide
+              the best care possible.
             </p>
             <p class="staff__text">
-              We understand the unique needs of cats and ensure each guest is
-              comfortable, loved, and well looked after throughout their stay.
+              We understand the unique needs of cats and ensure each guest is comfortable, loved,
+              and well looked after throughout their stay.
             </p>
           </div>
 
@@ -136,19 +109,39 @@
             <h2 class="cta-banner__title" id="about-contact-title">
               Have any questions about our cat hotel?
             </h2>
-            <p class="cta-banner__text">
-              Feel free to get in touch. We're happy to help!
-            </p>
+            <p class="cta-banner__text">Feel free to get in touch. We're happy to help!</p>
           </div>
-          <a href="../contact/contact.html" class="button cta-banner__button"
-            >Contact us</a
-          >
+          <a href="../contact/contact.html" class="button cta-banner__button">Contact us</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p class="footer__text">2026 KittyPaws &copy;</p>
+      <div class="container footer__inner">
+        <div class="footer__col footer__brand">
+          <span class="footer__logo">KittyPaws</span>
+        </div>
+
+        <div class="footer__col footer__nav-col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <a href="./pages/about/about.html" class="footer__link">About</a>
+            <a href="./pages/rooms/rooms.html" class="footer__link">Rooms</a>
+            <a href="./pages/reviews/reviews.html" class="footer__link">Reviews</a>
+            <a href="./pages/contact/contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__col footer__contact-col">
+          <h4 class="footer__heading">Find Us</h4>
+          <span>25 Cozy Street, Catville</span>
+          <a href="tel:+12345678900" class="footer__link">+1 (234) 567-8900</a>
+          <a href="mailto:hello@kittypaws.com" class="footer__link">hello@kittypaws.com</a>
+        </div>
+      </div>
+
+      <p class="footer__copyright">2026 KittyPaws &copy;</p>
     </footer>
+    <a href="#top" class="back-to-top" aria-label="Back to Top"> &uarr; </a>
   </body>
 </html>
