@@ -10,10 +10,6 @@
   white-space: nowrap;
 }
 
-main {
-  flex: 1;
-}
-
 .benefits {
   padding: 4rem 0 3.5rem;
 }

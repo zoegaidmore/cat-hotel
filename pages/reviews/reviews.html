@@ -14,20 +14,49 @@
 
     <header class="header">
       <div class="container header__inner">
-        <a
-          href="../../index.html"
-          class="header__logo"
-          aria-label="KittyPaws home"
-        >
+        <p class="header__logo">
           KittyPaws
-        </a>
+        </p>
+
+        <input
+          type="checkbox"
+          id="mobile-menu-toggle"
+          class="header__menu-toggle"
+          aria-label="Main menu"
+          aria-controls="mobile-main-navigation"
+        />
 
         <nav class="header__nav" aria-label="Main navigation">
+          <a href="../../index.html" class="header__link">Home</a>
           <a href="../about/about.html" class="header__link">About</a>
           <a href="../rooms/rooms.html" class="header__link">Rooms</a>
-          <a href="./reviews.html" class="header__link">Reviews</a>
+          <span class="header__link" aria-current="page">Reviews</span>
           <a href="../contact/contact.html" class="header__link">Contact</a>
         </nav>
+
+        <div class="header__mobile-menu">
+          <label
+            for="mobile-menu-toggle"
+            class="header__menu-button"
+            aria-hidden="true"
+          >
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+          </label>
+
+          <nav
+            class="header__mobile-nav"
+            id="mobile-main-navigation"
+            aria-label="Mobile navigation"
+          >
+            <a href="../../index.html" class="header__mobile-link">Home</a>
+            <a href="../about/about.html" class="header__mobile-link">About</a>
+            <a href="../rooms/rooms.html" class="header__mobile-link">Rooms</a>
+            <span class="header__mobile-link" aria-current="page">Reviews</span>
+            <a href="../contact/contact.html" class="header__mobile-link">Contact</a>
+          </nav>
+        </div>
       </div>
     </header>
 
