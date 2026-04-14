@@ -113,12 +113,14 @@ body {
   text-decoration: none;
 }
 
-.button:focus-visible {
+.button:focus-visible,
+.back-to-top:focus-visible {
   outline: 3px solid var(--color-text-inverse);
   outline-offset: 3px;
 }
 
-.button:hover {
+.button:hover,
+.back-to-top:hover {
   filter: brightness(1.15);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
@@ -489,17 +491,6 @@ main {
     opacity 0.3s ease,
     background-color 0.3s ease;
   z-index: 10;
-}
-
-.back-to-top:hover {
-  filter: brightness(1.15);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.back-to-top:focus-visible {
-  outline: 3px solid var(--color-text-inverse);
-  outline-offset: 3px;
 }
 
 @media (max-width: 900px) {
