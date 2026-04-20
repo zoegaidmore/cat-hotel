@@ -28,7 +28,7 @@
   color: var(--color-text-primary);
 }
 
-.benefits__list {
+.benefits__cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
