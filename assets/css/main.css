@@ -429,6 +429,10 @@ main {
   gap: 1rem;
 }
 
+.footer__contact-col {
+  margin-left: auto;
+}
+
 .footer__heading {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
@@ -452,10 +456,6 @@ main {
 
 .footer__link {
   width: fit-content;
-}
-
-.footer__nav-col {
-  margin-left: auto;
 }
 
 .footer__address {
@@ -531,6 +531,10 @@ main {
     max-width: 100%;
   }
 
+  .footer__contact-col {
+    margin-left: 0;
+  }
+
   .footer__inner {
     flex-direction: column;
     gap: 2rem;
@@ -547,10 +551,6 @@ main {
 
   .footer__col {
     align-items: center;
-  }
-
-  .footer__nav-col {
-    margin: 0;
   }
 
   .footer__copyright {
