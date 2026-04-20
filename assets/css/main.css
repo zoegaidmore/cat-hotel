@@ -447,7 +447,7 @@ main {
 .footer__nav {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .footer__link {
@@ -542,6 +542,10 @@ main {
   }
 
   .footer__nav {
+    align-items: center;
+  }
+
+  .footer__col {
     align-items: center;
   }
 
